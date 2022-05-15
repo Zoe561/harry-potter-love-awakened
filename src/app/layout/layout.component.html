@@ -1,0 +1,11 @@
+<div class="layout">
+  <section class="mobile-desc-box" *ngIf="this.sharedService.userDevice === DEVICE.MOBILE">
+    <div class="mobile-desc">
+      <p>付費也不能解鎖的手機板</p>
+      <p>僅支援 1024 以上</p>
+    </div>
+  </section>
+  <div class="game-room" *ngIf="this.sharedService.userDevice === DEVICE.PAD">
+    <router-outlet></router-outlet>
+  </div>
+</div>

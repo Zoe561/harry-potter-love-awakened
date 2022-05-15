@@ -1,0 +1,65 @@
+.bg {}
+
+.img-bg {
+  background-image: url('/assets/background/hufflepuff_lounge.png');
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: contain;
+
+  .title {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 64px;
+    top: 280px;
+    width: fit-content;
+    text-align: center;
+    left: 290px;
+    padding: 10px 20px;
+    font-weight: bolder;
+  }
+
+  .sub-title {
+    position: absolute;
+    color: rgb(217 209 110);
+    text-shadow: 0 1px 5px black;
+    font-size: 45px;
+    font-weight: bolder;
+    top: 533px;
+    left: 141px;
+    letter-spacing: 8px;
+  }
+
+
+  .menu {
+    color: white;
+    width: 350px;
+    float: right;
+    padding: 20px 5px;
+    height: 100vh;
+    top: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    &.backdrop-blur {
+      backdrop-filter: blur(5px);
+    }
+
+    .menu-item {
+      font-size: 28px;
+      cursor: pointer;
+
+      &:hover {
+        color: white;
+        font-weight: bolder;
+        transition: 0.3s;
+        font-size: 29px;
+      }
+
+    }
+
+  }
+}

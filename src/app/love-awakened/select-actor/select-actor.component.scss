@@ -1,0 +1,80 @@
+.bg {}
+
+
+.img-bg {
+  background-image: url('/assets/background/book_1.jpg');
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actor-box {
+  display: flex;
+  max-width: 80%;
+  height: 600px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+  .actor {
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: contain;
+    &.als{
+      background-image: url('/assets/actor/ALS.png');
+      &:hover{
+        background-image: url('/assets/actor/ALS_hover.png');
+      }
+    }
+
+    &.ci{
+      background-image: url('/assets/actor/CI.png');
+      &:hover{
+        background-image: url('/assets/actor/CI_hover.png');
+      }
+    }
+
+    &.lk{
+      background-image: url('/assets/actor/LK.png');
+      &:hover{
+        background-image: url('/assets/actor/LK_hover.png');
+      }
+    }
+
+    &.lll{
+      background-image: url('/assets/actor/LLL.png');
+      &:hover{
+        background-image: url('/assets/actor/LLL_hover.png');
+      }
+    }
+
+    &.rg{
+      background-image: url('/assets/actor/RG.png');
+      &:hover{
+        background-image: url('/assets/actor/RG_hover.png');
+      }
+    }
+
+    &.ys{
+      background-image: url('/assets/actor/YS.png');
+      &:hover{
+        background-image: url('/assets/actor/YS_hover.png');
+      }
+    }
+
+
+    &:hover {
+    // transform: scale(1.1);
+      transition: 0.5s;
+    }
+  }
+}

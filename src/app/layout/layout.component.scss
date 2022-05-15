@@ -1,0 +1,32 @@
+.layout {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #cea853, #684521);
+}
+
+.game-room {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.mobile-desc-box {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-content: center;
+  align-items: center;
+
+  .mobile-desc {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 32px;
+    padding: 50px;
+    // backdrop-filter: sepia(100%);   
+     background: rgb(255,255,255,.5);
+     font-weight: bolder;
+  }
+}
